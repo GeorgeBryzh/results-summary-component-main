@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Hanken Grotesk";
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --persian-blue-circle: hsla(241, 72%, 46%, 0);
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--pale-blue);
+}
+@media screen and (max-width: 1024px) {
+  body {
+    display: block;
+  }
+}
+
+main {
+  background: var(--white);
+  display: flex;
+  width: 46rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.general-result {
+  flex-basis: 50%;
+  background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+  border-radius: 1.5rem;
+  color: var(--light-lavender);
+  text-align: center;
+  padding: 2.38rem 3.38rem 3.44rem;
+}
+@media screen and (max-width: 1024px) {
+  .general-result {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 1.8rem 3.3rem 2.5rem;
+  }
+}
+.general-result__header {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .general-result__header {
+    font-size: 1rem;
+  }
+}
+.general-result__total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2.38rem;
+  background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .general-result__total {
+    margin-top: 1.8rem;
+    width: 8.75rem;
+    height: 8.75rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .general-result__total {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+.general-result__total-num {
+  color: var(--white);
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 4.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .general-result__total-num {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .general-result__total-num {
+    line-height: 3.5rem;
+    font-size: 2.8rem;
+  }
+}
+.general-result__max-num {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .general-result__max-num {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .general-result__max-num {
+    font-size: 0.8rem;
+  }
+}
+.general-result__comparing-header {
+  margin-top: 2.38rem;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .general-result__comparing-header {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+.general-result__comparing-description {
+  margin-top: 0.88rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media screen and (max-width: 1024px) {
+  .general-result__comparing-description {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+.summary {
+  flex-basis: 50%;
+  padding: 2.38rem 2.5rem 2.88rem;
+}
+@media screen and (max-width: 1024px) {
+  .summary {
+    padding: 1.5rem 2rem 1.88rem;
+  }
+}
+.summary__header {
+  color: var(--dark-gray-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .summary__header {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+}
+.summary__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-top: 1.75rem;
+  font-size: 1.125rem;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55;
+}
+@media screen and (max-width: 1024px) {
+  .summary__item {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+}
+.summary__item-name {
+  position: relative;
+  top: 0.24em;
+  font-weight: 500;
+}
+@media screen and (max-width: 1024px) {
+  .summary__item-name {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+.summary__item-total-score {
+  text-align: right;
+  font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .summary__item-total-score {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+.summary__item-maxnum {
+  text-align: right;
+  font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .summary__item-maxnum {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+.summary__next-link {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .summary__next-link {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+}/*# sourceMappingURL=style.css.map */

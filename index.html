@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <section class="general-result">
+        <h1 class="general-result__header">Your Result</h1>
+        <div class="general-result__total">
+          <p class="general-result__max-num">
+            <span class="general-result__total-num">76</span><br />
+            of 100
+          </p>
+        </div>
+        <h2 class="general-result__comparing-header">Great</h2>
+        <p class="general-result__comparing-description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+      <section class="summary">
+        <h1 class="summary__header">Summary</h1>
+        <ul>
+          <li class="summary__item">
+            <div class="summary__item-meta">
+              <i>
+                <img src="./assets/images/icon-reaction.svg" alt="" />
+              </i>
+              <span class="summary__item-name"> Reaction </span>
+            </div>
+            <div class="summary__item-total">
+              <span class="summary__item-total-score">80 &nbsp</span
+              ><span class="summary__item-maxnum">/&nbsp 100</span>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="summary__next-link"> Continue </a>
+      </section>
+    </main>
+  </body>
+</html>
