@@ -56,7 +56,10 @@ body {
 }
 
 html {
+  position: relative;
   width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 input,
@@ -130,8 +133,6 @@ body {
   font-family: "Manrope";
   font-weight: 400;
   font-size: 18px;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 header {
@@ -139,11 +140,11 @@ header {
   border: solid;
   position: relative;
   background-position: left -10rem bottom 70%, center bottom 70%, right -4rem bottom 40%;
+  overflow: visible;
 }
 
 header::after {
   content: "";
-  overflow: hidden;
   position: absolute;
   bottom: 0;
   left: 50%;
